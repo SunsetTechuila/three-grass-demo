@@ -111,7 +111,6 @@ function generateField () {
   geom.setAttribute('color', new THREE.BufferAttribute(new Float32Array(colors), 3));
   geom.setIndex(indices);
   geom.computeVertexNormals();
-  geom.computeFaceNormals();
 
   const mesh = new THREE.Mesh(geom, grassMaterial);
   scene.add(mesh);
